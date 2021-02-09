@@ -19,7 +19,7 @@
         "dest": "api"
       },
       {
-        "files": [ "articles/**/*.md", "*.md", "toc.yml", "restapi/**" ]
+        "files": [ "articles/**/*.md", "*.md", "toc.yml", "restapi/**", "otherTopics/**/*.md"  ]
       }
     ],
     "resource": [
@@ -31,7 +31,11 @@
     "globalMetadata": {
       "_appTitle": "docfx seed website",
       "_enableSearch": true
-    },
+    },    
+    "template": [
+      "default", 
+      "templates/UnityFx/templates/unity"
+    ],
     "markdownEngineName": "markdig",
     "dest": "_site",
     "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
